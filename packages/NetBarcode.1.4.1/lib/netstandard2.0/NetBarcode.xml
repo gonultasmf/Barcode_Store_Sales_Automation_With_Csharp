@@ -1,0 +1,335 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NetBarcode</name>
+    </assembly>
+    <members>
+        <member name="M:NetBarcode.Barcode.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NetBarcode.Barcode"/> class.
+            </summary>
+            <param name="data">The data to encode as a barcode.</param>
+        </member>
+        <member name="M:NetBarcode.Barcode.#ctor(System.String,NetBarcode.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NetBarcode.Barcode" /> class.
+            </summary>
+            <param name="data">The data to encode as a barcode.</param>
+            <param name="type">The type of barcode. Defaults to Code128</param>
+        </member>
+        <member name="M:NetBarcode.Barcode.#ctor(System.String,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NetBarcode.Barcode" /> class.
+            </summary>
+            <param name="data">The data to encode as a barcode.</param>
+            <param name="showLabel">if set to <c>true</c> show the data as a label. Defaults to false.</param>
+        </member>
+        <member name="M:NetBarcode.Barcode.#ctor(System.String,System.Boolean,System.Drawing.Font)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NetBarcode.Barcode" /> class.
+            </summary>
+            <param name="data">The data to encode as a barcode.</param>
+            <param name="showLabel">if set to <c>true</c> show the data as a label. Defaults to false.</param>
+            <param name="labelFont">The label font. Defaults to Font("Microsoft Sans Serif", 10, FontStyle.Bold)</param>
+        </member>
+        <member name="M:NetBarcode.Barcode.#ctor(System.String,NetBarcode.Type,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NetBarcode.Barcode" /> class.
+            </summary>
+            <param name="data">The data to encode as a barcode.</param>
+            <param name="type">The type of barcode. Defaults to Code128</param>
+            <param name="showLabel">if set to <c>true</c> show the data as a label. Defaults to false.</param>
+        </member>
+        <member name="M:NetBarcode.Barcode.#ctor(System.String,NetBarcode.Type,System.Boolean,System.Drawing.Font)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NetBarcode.Barcode" /> class.
+            </summary>
+            <param name="data"></param>
+            <param name="type">The type of barcode. Defaults to Code128</param>
+            <param name="showLabel">if set to <c>true</c> show the data as a label. Defaults to false.</param>
+            <param name="labelFont">The label font. Defaults to Font("Microsoft Sans Serif", 10, FontStyle.Bold)</param>
+        </member>
+        <member name="M:NetBarcode.Barcode.#ctor(System.String,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NetBarcode.Barcode" /> class.
+            </summary>
+            <param name="data">The data to encode as a barcode.</param>
+            <param name="width">The width in pixels. Defaults to 300.</param>
+            <param name="height">The height in pixels. Defaults to 150.</param>
+        </member>
+        <member name="M:NetBarcode.Barcode.#ctor(System.String,System.Boolean,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NetBarcode.Barcode" /> class.
+            </summary>
+            <param name="data">The data to encode as a barcode.</param>
+            <param name="showLabel">if set to <c>true</c> show the data as a label. Defaults to false.</param>
+            <param name="width">The width in pixels. Defaults to 300.</param>
+            <param name="height">The height in pixels. Defaults to 150.</param>
+        </member>
+        <member name="M:NetBarcode.Barcode.#ctor(System.String,System.Boolean,System.Int32,System.Int32,System.Drawing.Font)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NetBarcode.Barcode" /> class.
+            </summary>
+            <param name="data">The data to encode as a barcode.</param>
+            <param name="showLabel">if set to <c>true</c> show the data as a label. Defaults to false.</param>
+            <param name="width">The width in pixels. Defaults to 300.</param>
+            <param name="height">The height in pixels. Defaults to 150.</param>
+            <param name="labelFont">The label font. Defaults to Font("Microsoft Sans Serif", 10, FontStyle.Bold)</param>
+        </member>
+        <member name="M:NetBarcode.Barcode.#ctor(System.String,System.Boolean,System.Int32,System.Int32,NetBarcode.LabelPosition)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NetBarcode.Barcode" /> class.
+            </summary>
+            <param name="data">The data to encode as a barcode.</param>
+            <param name="showLabel">if set to <c>true</c> show the data as a label. Defaults to false.</param>
+            <param name="width">The width in pixels. Defaults to 300.</param>
+            <param name="height">The height in pixels. Defaults to 150.</param>
+            <param name="labelPosition">The label position. Defaults to bottom-center.</param>
+        </member>
+        <member name="M:NetBarcode.Barcode.#ctor(System.String,System.Boolean,System.Int32,System.Int32,NetBarcode.LabelPosition,System.Drawing.Font)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NetBarcode.Barcode" /> class.
+            </summary>
+            <param name="data">The data to encode as a barcode.</param>
+            <param name="showLabel">if set to <c>true</c> show the data as a label. Defaults to false.</param>
+            <param name="width">The width in pixels. Defaults to 300.</param>
+            <param name="height">The height in pixels. Defaults to 150.</param>
+            <param name="labelPosition">The label position. Defaults to bottom-center.</param>
+            <param name="labelFont">The label font. Defaults to Font("Microsoft Sans Serif", 10, FontStyle.Bold)</param>
+        </member>
+        <member name="M:NetBarcode.Barcode.#ctor(System.String,NetBarcode.Type,System.Boolean,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NetBarcode.Barcode" /> class.
+            </summary>
+            <param name="data">The data to encode as a barcode.</param>
+            <param name="type">The type of barcode. Defaults to Code128</param>
+            <param name="showLabel">if set to <c>true</c> show the data as a label. Defaults to false.</param>
+            <param name="width">The width in pixels. Defaults to 300.</param>
+            <param name="height">The height in pixels. Defaults to 150.</param>
+        </member>
+        <member name="M:NetBarcode.Barcode.#ctor(System.String,NetBarcode.Type,System.Boolean,System.Int32,System.Int32,System.Drawing.Font)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NetBarcode.Barcode" /> class.
+            </summary>
+            <param name="data">The data to encode as a barcode.</param>
+            <param name="type">The type of barcode. Defaults to Code128</param>
+            <param name="showLabel">if set to <c>true</c> show the data as a label. Defaults to false.</param>
+            <param name="width">The width in pixels. Defaults to 300.</param>
+            <param name="height">The height in pixels. Defaults to 150.</param>
+            <param name="labelFont">The label font. Defaults to Font("Microsoft Sans Serif", 10, FontStyle.Bold)</param>
+        </member>
+        <member name="M:NetBarcode.Barcode.#ctor(System.String,System.Boolean,System.Int32,System.Int32,NetBarcode.LabelPosition,NetBarcode.AlignmentPosition)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NetBarcode.Barcode" /> class.
+            </summary>
+            <param name="data">The data to encode as a barcode.</param>
+            <param name="showLabel">if set to <c>true</c> show the data as a label. Defaults to false.</param>
+            <param name="width">The width in pixels. Defaults to 300.</param>
+            <param name="height">The height in pixels. Defaults to 150.</param>
+            <param name="labelPosition">The label position. Defaults to bottom-center.</param>
+            <param name="alignmentPosition">The alignment position. Defaults to center.</param>
+        </member>
+        <member name="M:NetBarcode.Barcode.#ctor(System.String,System.Boolean,System.Int32,System.Int32,NetBarcode.LabelPosition,NetBarcode.AlignmentPosition,System.Drawing.Font)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NetBarcode.Barcode" /> class.
+            </summary>
+            <param name="data">The data to encode as a barcode.</param>
+            <param name="showLabel">if set to <c>true</c> show the data as a label. Defaults to false.</param>
+            <param name="width">The width in pixels. Defaults to 300.</param>
+            <param name="height">The height in pixels. Defaults to 150.</param>
+            <param name="labelPosition">The label position. Defaults to bottom-center.</param>
+            <param name="alignmentPosition">The alignment position. Defaults to center.</param>
+            <param name="labelFont">The label font. Defaults to Font("Microsoft Sans Serif", 10, FontStyle.Bold)</param>
+        </member>
+        <member name="M:NetBarcode.Barcode.#ctor(System.String,System.Boolean,System.Int32,System.Int32,NetBarcode.LabelPosition,NetBarcode.AlignmentPosition,System.Drawing.Color,System.Drawing.Color)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NetBarcode.Barcode" /> class.
+            </summary>
+            <param name="data">The data to encode as a barcode.</param>
+            <param name="showLabel">if set to <c>true</c> show the data as a label. Defaults to false.</param>
+            <param name="width">The width in pixels. Defaults to 300.</param>
+            <param name="height">The height in pixels. Defaults to 150.</param>
+            <param name="labelPosition">The label position. Defaults to bottom-center.</param>
+            <param name="alignmentPosition">The alignment position. Defaults to center.</param>
+            <param name="backgroundColor">Color of the background. Defaults to white.</param>
+            <param name="foregroundColor">Color of the foreground. Defaults to black.</param>
+        </member>
+        <member name="M:NetBarcode.Barcode.#ctor(System.String,System.Boolean,System.Int32,System.Int32,NetBarcode.LabelPosition,NetBarcode.AlignmentPosition,System.Drawing.Color,System.Drawing.Color,System.Drawing.Font)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NetBarcode.Barcode" /> class.
+            </summary>
+            <param name="data">The data to encode as a barcode.</param>
+            <param name="showLabel">if set to <c>true</c> show the data as a label. Defaults to false.</param>
+            <param name="width">The width in pixels. Defaults to 300.</param>
+            <param name="height">The height in pixels. Defaults to 150.</param>
+            <param name="labelPosition">The label position. Defaults to bottom-center.</param>
+            <param name="alignmentPosition">The alignment position. Defaults to center.</param>
+            <param name="backgroundColor">Color of the background. Defaults to white.</param>
+            <param name="foregroundColor">Color of the foreground. Defaults to black.</param>
+            <param name="labelFont">The label font. Defaults to Font("Microsoft Sans Serif", 10, FontStyle.Bold)</param>
+        </member>
+        <member name="M:NetBarcode.Barcode.#ctor(System.String,NetBarcode.Type,System.Boolean,System.Int32,System.Int32,NetBarcode.LabelPosition,NetBarcode.AlignmentPosition,System.Drawing.Color,System.Drawing.Color,System.Drawing.Font)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NetBarcode.Barcode" /> class.
+            </summary>
+            <param name="data">The data to encode as a barcode.</param>
+            <param name="type">The type of barcode. Defaults to Code128</param>
+            <param name="showLabel">if set to <c>true</c> show the data as a label. Defaults to false.</param>
+            <param name="width">The width in pixels. Defaults to 300.</param>
+            <param name="height">The height in pixels. Defaults to 150.</param>
+            <param name="labelPosition">The label position. Defaults to bottom-center.</param>
+            <param name="alignmentPosition">The alignment position. Defaults to center.</param>
+            <param name="backgroundColor">Color of the background. Defaults to white.</param>
+            <param name="foregroundColor">Color of the foreground. Defaults to black.</param>
+            <param name="labelFont">The label font. Defaults to Font("Microsoft Sans Serif", 10, FontStyle.Bold)</param>
+        </member>
+        <member name="M:NetBarcode.Barcode.SaveImageFile(System.String,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            Saves the image to a file.
+            </summary>
+            <param name="path">The file path for the image.</param>
+            <param name="imageFormat">The image format. Defaults to Jpeg.</param>
+        </member>
+        <member name="M:NetBarcode.Barcode.GetBase64Image">
+            <summary>
+            Gets the image in PNG format as a Base64 encoded string.
+            </summary>
+        </member>
+        <member name="M:NetBarcode.Barcode.GetByteArray">
+            <summary>
+            Gets the image in PNG format as a byte array.
+            </summary>
+        </member>
+        <member name="M:NetBarcode.Barcode.GetByteArray(System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            Gets the image as a byte array.
+            </summary>
+            <param name="imageFormat">The image format. Defaults to PNG.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NetBarcode.Barcode.GetImage">
+            <summary>
+            Gets the image.
+            </summary>
+            <returns>
+            Image class
+            </returns>
+        </member>
+        <member name="T:NetBarcode.Types.Codabar">
+            <summary>
+             Codabar encoding
+             Written by: Brad Barnhill
+             Refactored: Filipe Tagliatti
+            </summary>
+        </member>
+        <member name="M:NetBarcode.Types.Codabar.GetEncoding">
+            <summary>
+            Encode the raw data using the Codabar algorithm.
+            </summary>
+        </member>
+        <member name="T:NetBarcode.Types.Code11">
+            <summary>
+             Code 11 encoding
+             Written by: Brad Barnhill
+             Refactored: Filipe Tagliatti
+            </summary>
+        </member>
+        <member name="M:NetBarcode.Types.Code11.GetEncoding">
+            <summary>
+            Encode the raw data using the Code 11 algorithm.
+            </summary>
+        </member>
+        <member name="T:NetBarcode.Types.Code128">
+            <summary>
+             Code 128 encoding
+             Written by: Brad Barnhill
+             Refactored: Filipe Tagliatti
+            </summary>
+        </member>
+        <member name="M:NetBarcode.Types.Code128.#ctor(System.String)">
+            <summary>
+            Encodes data.
+            </summary>
+            <param name="data">Data to encode.</param>
+        </member>
+        <member name="M:NetBarcode.Types.Code128.#ctor(System.String,NetBarcode.Types.Code128.Code128Type)">
+            <summary>
+            Encodes data.
+            </summary>
+            <param name="data">Data to encode.</param>
+            <param name="code128Type">Type of encoding to lock to. (Code 128A, Code 128B, Code 128C)</param>
+        </member>
+        <member name="T:NetBarcode.Types.Code39">
+            <summary>
+             Code 39 encoding
+             Written by: Brad Barnhill
+             Refactored: Filipe Tagliatti
+            </summary>
+        </member>
+        <member name="M:NetBarcode.Types.Code39.#ctor(System.String)">
+            <summary>
+            Encodes with Code39.
+            </summary>
+            <param name="data">Data to encode.</param>
+        </member>
+        <member name="M:NetBarcode.Types.Code39.#ctor(System.String,System.Boolean)">
+            <summary>
+            Encodes with Code39.
+            </summary>
+            <param name="data">_data to encode.</param>
+            <param name="extended">Allow Extended Code 39 (Full Ascii mode).</param>
+        </member>
+        <member name="M:NetBarcode.Types.Code39.#ctor(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Encodes with Code39.
+            </summary>
+            <param name="data">_data to encode.</param>
+            <param name="extended">Allow Extended Code 39 (Full Ascii mode).</param>
+            <param name="enableChecksum">Whether to calculate the Mod 43 checksum and encode it into the barcode</param>
+        </member>
+        <member name="M:NetBarcode.Types.Code39.GetEncoding">
+            <summary>
+            Encode the raw data using the Code 39 algorithm.
+            </summary>
+        </member>
+        <member name="T:NetBarcode.Types.Code93">
+            <summary>
+             Code 93 encoding
+             Written by: Brad Barnhill
+            </summary>
+        </member>
+        <member name="M:NetBarcode.Types.Code93.#ctor(System.String)">
+            <summary>
+            Encodes with Code93.
+            </summary>
+            <param name="data">Data to encode.</param>
+        </member>
+        <member name="M:NetBarcode.Types.Code93.GetEncoding">
+            <summary>
+            Encode the raw data using the Code 93 algorithm.
+            </summary>
+        </member>
+        <member name="T:NetBarcode.Types.EAN13">
+            <summary>
+             EAN-13 encoding
+             Written by: Brad Barnhill
+            </summary>
+        </member>
+        <member name="M:NetBarcode.Types.EAN13.GetEncoding">
+            <summary>
+            Encode the raw data using the EAN-13 algorithm. (Can include the checksum already.  If it doesnt exist in the data then it will calculate it for you.  Accepted data lengths are 12 + 1 checksum or just the 12 data digits)
+            </summary>
+        </member>
+        <member name="T:NetBarcode.Types.EAN8">
+            <summary>
+             EAN-8 encoding
+             Written by: Brad Barnhill
+            </summary>
+        </member>
+        <member name="M:NetBarcode.Types.EAN8.GetEncoding">
+            <summary>
+            Encode the raw data using the EAN-8 algorithm.
+            </summary>
+        </member>
+    </members>
+</doc>
